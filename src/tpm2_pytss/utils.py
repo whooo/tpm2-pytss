@@ -424,7 +424,7 @@ class ek_templates:
         return True
 
     @staticmethod
-    def keys(): -> list[str]:
+    def keys() -> list[str]:
         return ek_template.available_templates
 
     @staticmethod
