@@ -4,13 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## 3.0.0-rc1 - 2025-07-18
+## 3.0.0 - 2025-08-15
 ### Fixed
 - Restore environment when exiting FAPIConfig
 - Fix ESAPI.hierarchy_control support for PLATFORM_NV hierarchy
 - Fix FAPI callback buffer lifetimes (fixes issues on free-threaded python)
 - Fix ECC seed length calculation in `__ecc_secret_to_seed`
 - Fix memory leak in FAPI
+- Use block size instead of key size for symmetric encryption IV
 
 ### Added
 - Add a context manager for ESYS handles, which flushes the handle at exit.
